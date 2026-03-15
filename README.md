@@ -73,10 +73,10 @@ Key features:
 ## 📬 Contact
 
 If you'd like to collaborate or discuss opportunities:
-
-📧 Email: your-priyesh9080@gmail.com
-🔗 LinkedIn: https://linkedin.com/in/priyesh50 
-🐙 GitHub: https://github.com/priyesh47data
+###
+📧 Email: your-priyesh9080@gmail.com <br>
+🔗 LinkedIn: https://linkedin.com/in/priyesh50 <br>
+🐙 GitHub: https://github.com/priyesh47data <br>
 
 ---
 
