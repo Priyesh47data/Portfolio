@@ -3,7 +3,7 @@
 This repository contains my personal portfolio website where I showcase my projects, skills, and learning journey in **Data Analytics and Web Development**.
 
 🔗 Live Website:  
-https://priyesh47data.github.io/Portfolio/
+ https://priyesh47data.github.io/Portfolio/Main_Folder/
 
 ---
 
