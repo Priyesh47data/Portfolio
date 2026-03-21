@@ -1390,3 +1390,66 @@ footer {
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+ 
+
+/* Added mini portfolio with glob icon on HTML code linw no. 94 and added a class .hero-badge-main and wraps open to work message and glob icone */
+.hero-badge-main{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ column-gap: 5px;
+}
+
+#hero-badge-globe{ 
+   animation: bgColorShift 5s ease-in-out infinite; 
+   color: rgb(255, 255, 255);
+   width: fit-content; 
+   transition: all 0.2s ease;
+ }
+
+#hero-badge-globe:hover{
+   transform: scale(1.1);
+}
+#hero-badge-globe .social-icon-globe2{
+  width:20px; 
+  height:21px;
+  border-radius: 10px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+
+
+/* Background color animation */
+@keyframes bgColorShift {
+  0% {
+    background: #000000;
+  }
+  25% {
+    background: #f20606;
+  }
+  
+  75% {
+    background: #0894f2;
+  }
+  100% {
+    background: #000000;
+  }
+}
+/* Website-Globe Icon Animarion */
+.globe-anim {
+  animation: rotateGlobe 6s linear infinite;
+}
+
+/* Rotation */
+@keyframes rotateGlobe {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
