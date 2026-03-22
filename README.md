@@ -3,6 +3,8 @@
 This repository contains my personal portfolio website where I showcase my projects, skills, and learning journey in **Data Analytics and Web Development**.
 
 🔗 Live Website:  
+ https://mini-portfolio-eight-mu.vercel.app/  <br>
+ OR <br>
  https://priyesh-five.vercel.app
 
 ---
