@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mobile Sales Dashboard</title>
+
+<style>
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0f172a;
+  color:white;
+}
+
+/* Modal PopUP */
+.modal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.modal-content{
+  background:#1e293b;
+  padding:30px;
+  border-radius:10px;
+  max-width:400px;
+  text-align:center;
+}
+
+.modal-content h2{
+  display:inline-block;
+  animation: shake 0.6s;
+  margin-bottom:10px;
+  color:#38bdf8;
+}
+ 
+@keyframes shake{
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+.modal-content button{
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  font-weight: bold;
+  background:linear-gradient(135deg,#3b82f6,#06b6d4);
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.5s ease;
+}
+
+.modal-content button:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 0 20px rgba(59,130,246,0.7),
+             0 0 40px rgba(6,182,212,0.4);
+}
+
+/* Header */
+.project-header{
+  padding:40px 8%;
+  text-align:center;
+}
+
+.project-header h1{
+  font-size:32px;
+  margin-bottom:10px;
+  color:#38bdf8;
+}
+
+.project-header p{
+  color:#cbd5e1;
+  max-width:700px;
+  margin:auto;
+}
+
+/* Info Section */
+.project-info{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:30px 8%;
+}
+
+.info-box{
+  background:#1e293b;
+  padding:20px;
+  border-radius:8px;
+  transition: all 0.5s ease;
+}
+
+.info-box:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 0 15px rgba(59,130,246,0.7),
+             0 0 30px rgba(6,182,212,0.4);
+}
+
+.info-box h3{
+  margin-bottom:8px;
+  color:#38bdf8;
+}
+
+/* Dashboard */
+.dashboard-container{
+  padding:40px 8%;
+}
+
+iframe{
+  width:100%;
+  height:600px;
+  border:none;
+  border-radius:10px;
+}
+
+.project-buttons{
+  text-align:center;
+  margin-top:40px;
+}
+
+.project-buttons a{
+  display:inline-block;
+  padding:14px 28px;
+  margin:10px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  letter-spacing:.5px;
+  transition:all .35s ease;
+}
+
+.github{
+  background:#111827;
+  color:white;
+  border:1px solid #374151;
+}
+
+.github:hover{
+  background:#1f2937;
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.portfolio{
+  background:linear-gradient(135deg,#3b82f6,#06b6d4);
+  color:white;
+}
+
+.portfolio:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 0 20px rgba(59,130,246,0.7),
+             0 0 40px rgba(6,182,212,0.4);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Modal -->
+<div id="loginNotice" class="modal">
+    <div class="modal-content">
+        <h2>⚠️ Microsoft Login Required</h2>
+        <p>
+        This dashboard is hosted on Microsoft Power BI.  
+        You may be asked to sign in with your Microsoft or organization account to view it.
+        </p>
+        <button onclick="closeModal()">Continue</button>
+    </div>
+</div>
+
+<!-- Title -->
+<div class="project-header">
+<h1>📱 Mobile Sales Dashboard</h1>
+
+<p>
+An interactive Power BI dashboard designed to analyze mobile phone sales,
+track brand performance, and identify top-selling models and regions.
+</p>
+</div>
+
+<!-- Project Info -->
+<div class="project-info">
+
+<div class="info-box">
+<h3>📂 Dataset</h3>
+<p>Mobile sales dataset including brand, model, pricing, and sales performance.</p>
+</div>
+
+<div class="info-box">
+<h3>🛠 Tools Used</h3>
+<p>Excel, Power BI, DAX, Data Modeling</p>
+</div>
+
+<div class="info-box">
+<h3>📊 KPIs</h3>
+<p>Total Sales, Units Sold, Top Brands, Regional Performance</p>
+</div>
+
+<div class="info-box">
+<h3>🎯 Goal</h3>
+<p>Help businesses analyze smartphone sales trends and make better decisions.</p>
+</div>
+
+</div>
+
+<!-- Dashboard -->
+<div class="dashboard-container">
+
+<iframe 
+title="Mobile Sales Dashboard"
+src="https://app.powerbi.com/reportEmbed?reportId=736e76ee-2ed6-46c0-b8b8-ee90995a3c4b&autoAuth=true&ctid=adbbbb7d-8aa9-4cf9-9a68-5486bedc438b"
+allowFullScreen="true">
+</iframe>
+
+</div>
+
+<!-- Buttons -->
+<div class="project-buttons">
+
+<a href="https://github.com/Priyesh47data/mobile-sales-bi-project" target="_blank" class="github">
+View Code
+</a>
+
+<a href="index.html" class="portfolio">
+Back to Portfolio
+</a>
+
+</div>
+
+<script>
+function closeModal(){
+  document.getElementById("loginNotice").style.display = "none";
+}
+</script>
+
+</body>
+</html>
